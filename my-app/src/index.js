@@ -3,12 +3,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Container from './Container';
+import Container from './User';
+import UserList from './UserList';
+import User from './User';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-<Container></Container>
+<UserList></UserList>
+<App>
+  <User></User>
+</App>
 
   </React.StrictMode>
 );
